@@ -1,0 +1,18 @@
+# Pomena default vrenosti ya kupca i dobavljaca u formi za contacts
+
+U kodu za definiciju forme ID 129 u liniji koja opisuje child_ids u kontext'u dodati 'default_supplier': 0, 'default_customer' : 0
+
+ <notebook colspan="4">
+    <page string="Contacts" attrs="{'invisible': [('is_company','=',False), ('child_ids', '=', [])]}" autofocus="autofocus">
+     <field name="child_ids" mode="kanban" context="{'default_parent_id': active_id, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_supplier': 0, 'default_customer': 0}">
+                                <kanban>
+                                    <field name="color"/>
+                                    <field name="name"/>
+                                    <field name="title"/>
+                                    <field name="email"/>
+                                    <field name="parent_id"/>
+                                    <field name="is_company"/>
+                                    <field name="function"/
+                                    
+  
+Napomena: ovo jestirano na verziji 7 na instalacijama irvasa i Proxime.
